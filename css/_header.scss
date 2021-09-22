@@ -1,0 +1,179 @@
+ $secondary : lightgreen;
+
+/*  HEADER SECTION CSS SECTION  */
+header{
+	 width: 100%;
+ 	 height: 100vh;
+	 position: relative;
+	 background-image: url(../images/header5-img.jpg);
+	 background-size: 100% 100%;
+	 background-repeat: no-repeat;
+	 background-blend-mode: overlay;
+	 background-color: rgba(0,0,0,0.7)
+}
+
+
+
+
+/*  NAVBAR MENU CSS SECTION  */
+.navmenu{
+	padding: 10px;
+.logo{
+	width: 100px;
+	object-fit: contain;
+
+}
+//logo
+
+.menu{
+li{
+	 padding: 10px;
+	 position: relative;
+}
+li::after{
+	 content: "";
+	 position: absolute;
+	 width: 0px;
+	 height: 3px;
+	 background: $secondary;
+	 left: 10%;
+}
+li:hover::after{
+	 width: 80%;
+	 transition: 0.5s ease;
+}
+a{
+	color: white;
+}
+
+}
+}
+
+/*   MENU bar CSS SECTION  */
+
+
+
+
+.heading-section{
+	padding-top: 140px;
+	color: white;
+
+.heading-text *{
+	 margin-top: 10px;
+}
+.heading-text{
+span{
+	color: $secondary;
+}
+h5{
+	color: $maincolor;
+	}
+h1{
+	 font-size: 60px;
+	 text-transform: capitalize;
+	 color: white;
+}
+}
+//heading text
+
+.heading-img{
+img{
+	height: 400px;
+	width: 100%;
+}
+}
+
+ }
+
+
+.fixedbtn{
+	 width: 66px;
+	 height: 65px;
+	 position: fixed;
+	 background: $maincolor;
+	 top: 86%;
+	 z-index: 999999;
+	 right: 3%;
+	 border-radius: 100px;
+	 box-shadow: 3px 5px 8px grey;
+	 display: none;
+button{
+	border-radius: 100px;
+	width: 100%;
+	height: 100%;
+	background: $maincolor;
+	border: 1px solid white;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+i{
+	font-size: xx-large;
+	animation: upbtn 2s 2s infinite;
+	margin-top: 20px;
+}
+}
+
+
+.playbtn{
+ 	 color: white;
+ 	 background: transparent;
+	 width: 70px;
+	 border: 1px solid white;
+	 height: 70px;
+	 border-radius: 70px;
+	 font-size: 22px;
+	 border: none;
+	 outline: none;
+	 place-item : center;
+	 animation-name: ripple;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 #fff4, 0 0 0 0 #fff4;
+        	 border: 1px solid lightgrey;
+    }
+
+    80% {
+        box-shadow: 0 0 0 20px #fff0, 0 0 0 40px #fff0;
+        	 border: 1px solid lightgrey;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+    	 border: 1px solid lightgrey;
+    }
+}
+
+
+
+
+
+@keyframes upbtn{
+0%{
+	margin-top: 20px;
+}
+60%{
+	margin-top: -70px;
+	transition: 1s ease;
+}
+}
+
+
+
+/* when document scroll so this class will active on navbar */
+.nav-active{
+	 background: white;
+	 transition: 0.4s;
+ 	 box-shadow: 3px 5px 12px rgba(0,0,0,0.1);
+}
+
+
+.showbtn{
+	display: block;
+}

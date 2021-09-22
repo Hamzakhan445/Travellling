@@ -1,0 +1,150 @@
+
+/* -----------------------------------------
+	MEDIAQUERIES SECTION STARTS
+------------------------------------------ */
+
+	.smtoggle{
+		display: none !important;
+ 	}
+	.smmenu{
+		 background: white;
+		 width: 50%;
+		 top: 160%;
+		 position: absolute;
+		 opacity: 0;
+		 box-shadow: 3px 5px 12px grey;
+
+	}
+	.smactive{
+	 opacity: 1 !important;
+	 top: 100%;
+	 transition: 0.4s ease-in-out;
+}
+	.menu-sm {
+	a{
+		color: black !important;
+	}
+	li:hover{
+		background: $maincolor;
+		transition: 0.5s;
+	}
+	li:hover a{
+		color: white !important;
+	}
+	}
+ 
+
+/* -----------------------------------------
+		MEDIAQUERIES FOR 992PX SCREEN 
+------------------------------------------ */
+
+@media only screen and (max-width: 992px)
+{ 
+	.navmenu{
+		background: white !important;
+		box-shadow: 3px 5px 12px rgba(0,0,0,0.4)
+	}
+	.menu{
+		 display: none !important;
+	}
+	.smtoggle{
+		 display: block !important;
+	}
+
+.service-wrapper{
+	flex-wrap: wrap;
+	
+	.service-box{
+		 width: 47%;
+		 margin : 15px auto;
+
+	}
+	}
+	/// service wrapper ends here
+
+	.nav-active{
+		 display: none !important;
+	}
+	///nav active
+	.form-floating{
+		 width: 100% !important;
+	}
+
+}
+
+/* -----------------------------------------
+	MEDIAQUERIES FOR 768PX
+------------------------------------------ */
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px)
+{
+	.owl-prev{
+		 left: -3%;
+	}
+	.owl-next{
+		 right: -2%;
+	}
+	.places-box{
+		 width: 70% !important;
+	}
+	.services-section{
+		margin-top: 400px;
+	}
+.service-wrapper{
+		 flex-direction: column;
+	
+	.service-box{
+		 width: 80%;
+		 margin: 15px auto;
+
+	}
+	}
+/* 	/ service wrapper ends */
+}
+
+/* -----------------------------------------
+	MEDIAQUERIES FOR 576PX
+------------------------------------------ */
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px)
+{
+ 
+  .heading-text h1{
+  	font-size: 40px;
+  }
+
+	.heading-img{
+		 margin-top: 40px !important;
+	}
+	.services-section{
+		 margin-top: 460px !important;
+	}
+	.service-wrapper{
+		 flex-direction: column;
+	
+	.service-box{
+		 width: 100%;
+		 margin-left: 0px;
+	}
+	}
+}
+
+/* -----------------------------------------
+	MEDIAQUERIES FOR 768PX
+------------------------------------------ */
+
+
+
+

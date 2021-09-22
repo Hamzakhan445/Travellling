@@ -1,0 +1,27 @@
+
+
+footer{
+background: whitesmoke;
+padding: 30px;
+margin-top: 120px;
+
+.footerbtn button{
+ width: 60px;
+ height: 60px;
+ color: white;
+ font-size: x-large;
+ border-radius: 100px;
+ border: none;
+ background: $maincolor;
+ box-shadow: 3px 5px 10px grey;
+&:hover{
+	 background: none;
+	 color: black;
+	 transition: 0.5s;
+}
+}
+
+.social-img img{
+	 cursor: pointer;
+}
+}

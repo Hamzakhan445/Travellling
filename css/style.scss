@@ -1,0 +1,88 @@
+ *{
+ 	padding: 0px;
+ 	margin: 0px;
+ 	box-sizing: border-box;
+ }
+
+
+ $maincolor : blueviolet;
+ $secondary : lightgreen;
+
+/* ----------------------------
+  ANOTHER SCSS FILES 
+------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+ @import '_header';
+ @import '_service';
+ @import '_places';
+ @import '_trip';
+ @import '_banner';
+ @import '_testimonials';
+ @import '_footer';
+ @import '_mediaqueries';
+ @import '_humburget';
+
+
+
+///----------------------------------------------
+
+body{
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+     font-family: 'Quicksand', sans-serif ;
+     font-weight: 700 !important;
+}
+
+h1{
+  color: grey;
+}
+h2,h3,h4,h5,h6{
+   color: grey !important;
+}
+
+
+.mainbtn{
+	 width: 120px;
+	 height: 55px;
+	 border: none;
+  background: $maincolor;
+  	color: white;
+&:hover{
+   background: white;
+   border: 1px solid black;
+   color: black;
+   transition: 0.4s;
+}
+}
+
+
+
+
+
+.contact-section{
+   margin-top: 100px;
+   border: 1px solid lightgrey;
+}
+
+
+
+
+.paymentimg{
+    animation-name: payment;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes payment{
+    0%{
+         opacity: 0.7;
+    transform: rotate(10deg);
+
+    }
+    50%{
+         opacity: 1;
+         transform: translate(30px);
+    }
+}

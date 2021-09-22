@@ -1,0 +1,38 @@
+ 
+
+
+.services-section{
+	margin-top: 100px;
+}
+
+
+.service-wrapper{
+	 width: 100%;
+ 	 padding: 10px;
+	 display: flex;
+	 margin-top: 30px;
+ 
+
+
+.service-box{
+	border: 1px solid lightgrey;
+	width: 34%;
+	margin: 10px;
+	padding: 5px;
+	background: transparent;
+	box-shadow: 3px 5px 12px rgba(0,0,0,0.3);
+
+&:hover{
+	box-shadow: 4px 6px 14px grey;
+}
+}
+.service-box *{
+	margin-top: 15px;
+}
+.service-img{
+	width: 70px;
+	margin-top: 20px;
+
+}
+}
+
